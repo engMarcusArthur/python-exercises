@@ -5,5 +5,5 @@
 
  channel link/link do canal: https://www.youtube.com/channel/UCrWvhVmt0Qac3HgsjQK62FQ
 
- GitHub do professor: https://www.github.com/gustavoguanabara
+ teacher Github/GitHub do professor: https://www.github.com/gustavoguanabara
  
