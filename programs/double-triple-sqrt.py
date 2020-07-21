@@ -1,22 +1,53 @@
-#print the double, triple and square root of a number typed by the user
+def twice(x):
+    """
+        This function calculates the double, sending the result to the msg function
+        x -> value entered by the user
+        result -> the double of 'x'
+    """
+    result = x * 2
+    msg('double', x, result)
 
-#interesting to import 'sqrt' for square root resolution
-from math import sqrt
-# sqrt(x) returns the square root of 'x'
 
-while True:
-    num = int(input('Type a number: '))
-    #here, the results will are printeds
-    print(f'The double of {num} is {num * 2}; triple, {num * 3}; and the square root is {sqrt(num):.1f}\n')
+def triple (x):
+    """
+        This function calculates the triple, sending the result to the msg function
+        x -> value entered by the user
+        result -> the triple of 'x'
+    """
+    result = x * 3
+    msg('triple', x, result)
 
-    #continue or end
-    while True:
-        #strip to remove unwanted spaces; upper to uppercase
-        ans = input('Do you wanted continue? [Y/N]').strip().upper()
-        #considering just the first letter
-        if ans[0] == 'Y' or ans[0] == 'N':
-            break
-    print('-' * 100)
-    if ans[0] == 'N':
-        break
-print('END')
+
+def squareRoot(x):
+    """
+        This function calculates the square root (sqrt), sending the result to the msg function
+        x -> value entered by the user
+        result -> the square root of 'x'
+    """
+    from math import sqrt
+    result = f'{sqrt(x):.2f}'
+    msg('square root', x, result)
+
+
+def msg(action, x, result):
+    """
+        This function reports the result to the user
+        action -> action taken to determine the result
+        x -> value entered by the user
+        result -> result of action on 'x'
+    """
+    print(f'The {action.title()} of {x} is: {result}')
+
+
+def line():
+    """This function show a line in the screen"""
+    print('-' * 35)
+
+
+#Main
+n = int(input('Type a number: '))
+line()
+twice(n)
+triple(n)
+squareRoot(n)
+line()
