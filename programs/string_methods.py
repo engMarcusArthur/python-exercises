@@ -51,6 +51,7 @@ print("<11> {x}'s last name is {y}".format_map(a)) #<11>Formats specified values
 
 input() # Just a wating before exit. Press Enter.
 """
+DAQUI PRA BAIXO AINDA NÃO MEXI
 print("<12>", txt.index())	#<12>Searches the string for a specified value and returns the position of where it was found
 print("<13>", txt.isalnum())	#<13>Returns True if all characters in the string are alphanumeric
 print("<14>", txt.isalpha())	#<14>Returns True if all characters in the string are in the alphabet
