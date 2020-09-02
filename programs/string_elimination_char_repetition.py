@@ -16,5 +16,6 @@ print("Type something with character repetition and I will eliminate the sequenc
 sentence=input("->") #For example, type >aaaaaaaaaaabbbbbbbbcccccccccc                 1111111122222233<
 newstring=elim_ch_repet(sentence) #call funciont sending the argument
 print(newstring)
+input() # Just a wating before exit. Press Enter.
 exit()
 #------------------------------------------------------------

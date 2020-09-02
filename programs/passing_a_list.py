@@ -12,3 +12,4 @@ print("p  :",end="")
 print(p)
 print("q  :",end="")
 print(q)
+input() # Just a wating before exit. Press Enter.

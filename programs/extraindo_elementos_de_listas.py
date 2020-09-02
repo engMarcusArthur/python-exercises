@@ -7,3 +7,4 @@ print(joined_list1)
 print(joined_list2)
 joined_list2.reverse()
 print(joined_list2)
+input() # Just a wating before exit. Press Enter.

@@ -10,9 +10,11 @@ while esp!=1 and esp!=2:
         except ValueError:
             print("Oops!  You must to type something valid.  Try again...")
     if esp==1:#as a number non-decimal on the code, python understands as an integer (and not a string).
-        print('The End', end='')
+        print(end='')
     elif esp==2:
         print('The program is ending...', end='', flush=True)
     else:
         print("... Please, type 1 or 2 and Enter! Thank you!!")
 time.sleep(3) #three seconds
+
+input('The End \n\n\n Press Enter to exit.') # Just a wating before exit. Press Enter.

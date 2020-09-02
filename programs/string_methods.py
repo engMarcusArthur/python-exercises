@@ -7,9 +7,17 @@ txt=(input("Type a string (the 'first string') to analise code response accordin
 print("<1>",txt.capitalize())	#<1>Converts the first character to upper case
 print("<2>",txt.casefold())	#<2>Converts string into lower case
 print("<3>This method will center the string. Type a previous lenght you want to set the string:", end='')
-lenght_str=int(input("->"))
+try:
+    lenght_str=int(input("->"))
+except:
+    print("OK, I choose a lenght to you: 10.")
+    lenght_str=10
 around_str=str(input("Now type what you want the first string are going to stay between ->"))
-print(txt.center(lenght_str,around_str))	#<3>Returns a centered string. First argument required to the parameter. Second opcional.
+try:
+    print(txt.center(lenght_str,around_str))	#<3>Returns a centered string. First argument required to the parameter. Second opcional.
+except:
+    print("Just one character... OK, I choose it to you: $.")
+    print(txt.center(lenght_str,'$'))
 print("<4>This method will count how many times a string (case sensitive) appears inside the first string. Type a string you want to know how many times it appears:", end='')
 appear_str=str(input("->"))
 print(txt.count(appear_str))	#<4>Returns the number of times a specified value occurs in a string
@@ -23,9 +31,14 @@ print("<7> Lets joint all the tuple's elements with an * between them. -->    ",
 print("*".join(tupla))	#<7>Joint the elements.
 print("<8> Now lets insert tabs between them. I create the tabs and you choose the length of the tabs:", end='')
 new_text=str("\t".join(tupla)) # Create a new string joining the tuple elements with tabs between them.
-len_tabs=int(input("->"))
+try:
+    len_tabs=int(input("->"))
+except:
+    print("OK, I choose a lenght to you: 10.")
+    len_tabs=10
+
 print(new_text.expandtabs(len_tabs))	#<8> Expand tabs in a string.
-print("<9> I am going to told you where is the first appearance of a string you type in the first string. Type what string you want to know where it is.", end='')
+print("<9> I am going to tell you where is the first appearance of a string you type in the first string. Type what string you want to know where it is.", end='')
 where_string=input("->")
 print("<9>", txt.find(where_string))	#<9>Searches the string and returns the position where it was found.
 print("<10>", txt.format())	#<10>Formats specified values in a string; not explored here
@@ -35,6 +48,8 @@ c="Wick"
 a = {"x":b, "y":c}
 # Use of format_map() function
 print("<11> {x}'s last name is {y}".format_map(a)) #<11>Formats specified values in a string
+
+input() # Just a wating before exit. Press Enter.
 """
 print("<12>", txt.index())	#<12>Searches the string for a specified value and returns the position of where it was found
 print("<13>", txt.isalnum())	#<13>Returns True if all characters in the string are alphanumeric

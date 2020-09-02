@@ -1,4 +1,4 @@
-def proximo():
+﻿def proximo():
     '''
     -> função que indica se a inserção continuará ou não
     :return: resp, s para continuar e n para parar
