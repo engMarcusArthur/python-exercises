@@ -30,10 +30,10 @@ while True:
         #verification to sentence
         for i in key.strip():
             if True == i.isalnum():
-                print(", but it's a sentence")
+                print(", but it seems to be a sentence.")
                 break
             elif i == key[-1] and False == i.isalnum():
-                print(', nor is it a sentence')
+                print(', nor is it a sentence.')
     print('-' * 100)
 
     #to continues typing or to end
