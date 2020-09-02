@@ -1,6 +1,8 @@
 # python-exercises
 
-Fork dos exercícios https://github.com/almemanuel/python-exercises
+I have included my own exercises on this fork and have used the originals as references. Have a look at 'programs' diretory.
+
+Fork from https://github.com/almemanuel/python-exercises
 
 From the origin:
 ***
