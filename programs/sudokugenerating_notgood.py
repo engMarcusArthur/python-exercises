@@ -15,7 +15,7 @@ sudoku_grid = [
     ]
 
 GRID_SIZE = len(sudoku_grid)
-maxnumber_of_tips = 19  # Too many tips do not generate a grid with solution
+maxnumber_of_tips = 19  # Too many 'tips' do not generate a grid with solution. Fewer 'tips' generate grids with too many solutions.
 
 def verify_subgrid(number, row, col):
     row_start = (row // 3) * 3
