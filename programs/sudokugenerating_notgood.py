@@ -15,7 +15,7 @@ sudoku_grid = [
     ]
 
 GRID_SIZE = len(sudoku_grid)
-maxnumber_of_tips = 17  # Some tests on algorithms on internet show that something around 17 is the number of tips generated with this algorithm that produce a puzzle with solution
+maxnumber_of_tips = 19  # Too many tips do not generate a grid with solution
 
 def verify_subgrid(number, row, col):
     row_start = (row // 3) * 3
